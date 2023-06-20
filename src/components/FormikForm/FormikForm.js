@@ -8,7 +8,7 @@ const validationSchema = Yup.object().shape({
     firstName: Yup.string().min(2).max(32).required('Требуется указать имя'),
     lastName: Yup.string().min(2).max(32).required('Требуется указать фамилию'),
     dateOfBirth: Yup.date().required('Требуется указать дату рождения'),
-    gender: Yup.string().oneOf(['мужской', 'женский']).required('Требуется указать пол'),
+    gender: Yup.string().oneOf(['male', 'female']).required('Требуется указать пол'),
     isMarried: Yup.boolean()
 });
 
